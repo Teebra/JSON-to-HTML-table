@@ -87,6 +87,12 @@ Once the workflow completes successfully, you can access the generated HTML tabl
 
 That's it! You've successfully used the "Convert JSON to HTML Table" GitHub Action to visualise your JSON data as an HTML table.
 
+### Preview
+* Input [JSON data](https://github.com/Teebra/JSON-to-HTML-table/tree/main/test-data)
+* OutPut [HTML_Table](https://github.com/Teebra/JSON-to-HTML-table/tree/main/test-result)
+  ![Screenshot from 2023-09-16 00-01-02](https://github.com/Teebra/JSON-to-HTML-table/assets/125788246/db553fc7-1f9a-4173-91b7-834d1b6524da)
+
+
 ### Troubleshooting
 
 If you encounter any issues or errors while using the action, check the GitHub workflow logs for details on what went wrong. Make sure that the JSON file path specified in your workflow YAML file is correct.
