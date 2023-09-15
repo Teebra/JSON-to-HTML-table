@@ -1,0 +1,128 @@
+{
+    "people": [
+      {
+        "name": "John Doe",
+        "age": 30,
+        "address": {
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zipcode": "12345"
+        },
+        "contact": {
+          "email": "johndoe@example.com",
+          "phone": "555-123-4567"
+        },
+        "pets": [
+          {
+            "name": "Rover",
+            "species": "Dog",
+            "age": 5
+          },
+          {
+            "name": "Whiskers",
+            "species": "Cat",
+            "age": 3
+          }
+        ],
+        "hobbies": ["Reading", "Hiking", "Painting"],
+        "preferences": {
+          "food": ["Pizza", "Sushi"],
+          "color": "Blue"
+        }
+      },
+      {
+        "name": "Jane Smith",
+        "age": 28,
+        "address": {
+          "street": "456 Elm St",
+          "city": "Anotherville",
+          "state": "NY",
+          "zipcode": "54321"
+        },
+        "contact": {
+          "email": "janesmith@example.com",
+          "phone": "555-987-6543"
+        },
+        "pets": [],
+        "hobbies": ["Swimming", "Photography"],
+        "preferences": {
+          "food": ["Italian", "Thai"],
+          "color": "Green"
+        }
+      },
+      {
+        "name": "David Brown",
+        "age": 35,
+        "address": {
+          "street": "789 Oak St",
+          "city": "Sometown",
+          "state": "TX",
+          "zipcode": "67890"
+        },
+        "contact": {
+          "email": "davidbrown@example.com",
+          "phone": "555-789-0123"
+        },
+        "pets": [
+          {
+            "name": "Fluffy",
+            "species": "Rabbit",
+            "age": 2
+          }
+        ],
+        "hobbies": ["Golf", "Traveling"],
+        "preferences": {
+          "food": ["Steak", "Mexican"],
+          "color": "Red"
+        }
+      },
+      {
+        "name": "Emily Johnson",
+        "age": 25,
+        "address": {
+          "street": "101 Pine St",
+          "city": "Smalltown",
+          "state": "OH",
+          "zipcode": "13579"
+        },
+        "contact": {
+          "email": "emilyjohnson@example.com",
+          "phone": "555-555-5555"
+        },
+        "pets": [],
+        "hobbies": ["Baking", "Yoga"],
+        "preferences": {
+          "food": ["Chinese", "Salad"],
+          "color": "Purple"
+        }
+      },
+      {
+        "name": "Michael Wilson",
+        "age": 40,
+        "address": {
+          "street": "222 Cedar St",
+          "city": "Hometown",
+          "state": "IL",
+          "zipcode": "24680"
+        },
+        "contact": {
+          "email": "michaelwilson@example.com",
+          "phone": "555-222-3333"
+        },
+        "pets": [
+          {
+            "name": "Max",
+            "species": "Golden Retriever",
+            "age": 6
+          }
+        ],
+        "hobbies": ["Fishing", "Reading"],
+        "preferences": {
+          "food": ["Burgers", "Seafood"],
+          "color": "Yellow"
+        }
+      }
+    ]
+  }
+  
