@@ -1,7 +1,8 @@
 # JSON-to-HTML-table
 ```
 - name: Convert JSON to HTML Table
-  uses: your-username/your-action-repo@v1
+  uses: Teebra/JSON-to-HTML-table@main
   with:
     json-file: path/to/your/jsonfile.json
+
 ```
