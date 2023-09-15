@@ -1,14 +1,10 @@
 import json
 from json2table import convert
-import sys
 import os
 
 def main():
-    if len(sys.argv) < 2:
-        print("Please provide the path to the JSON file as a command-line argument.")
-        sys.exit(1)
-
-    json_file = sys.argv[1]
+    # Retrieve the JSON file path from the environment variable
+    json_file = os.getenv('INPUT_JSON-FILE')
 
     # Check if the provided JSON file path is relative or absolute
     if not os.path.isabs(json_file):
@@ -22,10 +18,10 @@ def main():
             json_data = json.load(f)
     except FileNotFoundError:
         print(f"JSON file '{json_file}' not found.")
-        sys.exit(1)
+        exit(1)
     except json.JSONDecodeError:
         print(f"Error decoding JSON in file '{json_file}'.")
-        sys.exit(1)
+        exit(1)
 
     # Convert the JSON data to an HTML table with added styles
     table_attributes = {
