@@ -59,8 +59,8 @@ jobs:
       - name: Upload HTML Table to Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: output_html
-          path: output.html
+          name: output_html 
+          path: output.html # The created file's name is output.html. Name cannot be changed
 
 ```
 Make sure to adjust the following:
