@@ -34,11 +34,8 @@ def main():
     html_table = html_table.replace("<tr>", "<tr style=\"border: 0.1px solid black;\">")
     html_table = html_table.replace("<td>", "<td style=\"border: 0.1px solid black;\">")
 
-    # Output file name based on the input JSON file name
-    output_file = json_file.replace('.json', '.html')
-
     # Print the HTML table to the output file
-    with open(output_file, 'w') as f:
+    with open('output.html', 'w') as f:
         f.write(html_table)
 
 if __name__ == '__main__':
