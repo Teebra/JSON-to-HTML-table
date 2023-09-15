@@ -1,9 +1,24 @@
 import json
 from json2table import convert
+import sys
 
 def main():
-    # Load the JSON data
-    json_data = json.load(open('results.json'))
+    if len(sys.argv) < 2:
+        print("Please provide the path to the JSON file as a command-line argument.")
+        sys.exit(1)
+
+    json_file = sys.argv[1]
+
+    try:
+        # Load the JSON data from the specified file
+        with open(json_file, 'r') as f:
+            json_data = json.load(f)
+    except FileNotFoundError:
+        print(f"JSON file '{json_file}' not found.")
+        sys.exit(1)
+    except json.JSONDecodeError:
+        print(f"Error decoding JSON in file '{json_file}'.")
+        sys.exit(1)
 
     # Convert the JSON data to an HTML table with added styles
     table_attributes = {
@@ -16,11 +31,12 @@ def main():
     html_table = html_table.replace("<tr>", "<tr style=\"border: 0.1px solid black;\">")
     html_table = html_table.replace("<td>", "<td style=\"border: 0.1px solid black;\">")
 
-    # Print the HTML table
-    with open('output.html', 'w') as f:
+    # Output file name based on the input JSON file name
+    output_file = json_file.replace('.json', '.html')
+
+    # Print the HTML table to the output file
+    with open(output_file, 'w') as f:
         f.write(html_table)
 
 if __name__ == '__main__':
     main()
-
-# border-collapse: collapse  padding: 10px; margin: 5px; font-size:16px
