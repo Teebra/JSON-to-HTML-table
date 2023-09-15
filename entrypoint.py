@@ -25,7 +25,7 @@ def main():
 
     # Convert the JSON data to an HTML table with added styles
     table_attributes = {
-        "style": "width:100%; height:100%; border-collapse: collapse; font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace; background-color: #E8E8E8; float: left"
+        "style": "width:100%; height:100%; border-collapse: collapse; font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace; background-color: #f6f8fa; float: left"
     }
     html_table = convert(json_data, build_direction="LEFT_TO_RIGHT", table_attributes=table_attributes)
 
