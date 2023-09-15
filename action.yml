@@ -1,0 +1,11 @@
+name: 'Convert JSON to HTML Table'
+description: 'Converts JSON data to an HTML table'
+inputs:
+  json-file:
+    description: 'The JSON file to convert'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+main:
+  python /entrypoint.py
