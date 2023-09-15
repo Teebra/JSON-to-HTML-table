@@ -4,7 +4,8 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/Teebra/JSON-to-HTML-table/blob/main/LICENSE)
 
 This GitHub Action allows you to convert a JSON file into an HTML table with customizable styles. It's useful for visualising JSON data in a more human-readable format.
-* Convert JSON to HTML Table - GitHub Action
+* Convert JSON to HTML Table: GitHub Action
+* Convert any JSON file to HTML table
 * Convert the Static Code Analysis JSON report to an HTML table.
 
 Support the JSON format used by Veracode and transform it into a nice HTML table for simple reading.
