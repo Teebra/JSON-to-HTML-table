@@ -41,6 +41,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: output_html
-          path: test.html
+          path: output.html
 
 ```
