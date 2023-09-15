@@ -1,0 +1,25 @@
+name: My Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert-json-to-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Convert JSON to HTML Table
+        uses: Teebra/JSON-to-HTML-table@main
+        with:
+          json-file: test-data/test-data.json
+
+
+      - name: Upload HTML Table to Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: output_html
+          path: output.html
