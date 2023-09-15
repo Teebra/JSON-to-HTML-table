@@ -1,6 +1,7 @@
 import json
 from json2table import convert
 import sys
+import os
 
 def main():
     if len(sys.argv) < 2:
@@ -8,6 +9,12 @@ def main():
         sys.exit(1)
 
     json_file = sys.argv[1]
+
+    # Check if the provided JSON file path is relative or absolute
+    if not os.path.isabs(json_file):
+        # If it's relative, make it absolute by joining with the workspace directory
+        workspace = os.getenv('GITHUB_WORKSPACE', '')
+        json_file = os.path.join(workspace, json_file)
 
     try:
         # Load the JSON data from the specified file
