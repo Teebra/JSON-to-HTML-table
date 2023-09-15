@@ -1,6 +1,13 @@
 FROM python:3.8
 
-COPY entrypoint.py /entrypoint.py
+# Set the working directory
+WORKDIR /action
+
+# Copy the Python script into the container
+COPY entrypoint.py /action/entrypoint.py
+
+# Install required dependencies
 RUN pip install json2table
 
-ENTRYPOINT ["python", "/entrypoint.py"]
+# Run the Python script as the entry point
+ENTRYPOINT ["python", "/action/entrypoint.py"]
