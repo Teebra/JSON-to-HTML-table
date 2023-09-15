@@ -69,7 +69,8 @@ Make sure to adjust the following:
 * on: Define the event that triggers the workflow, e.g., push to the main branch.
 * json-file: Specify the path to your JSON file using the json-file input. You can adjust the path based on your repository structure.
 
-### 3. [Optional] Upload HTML Table to Artifacts
+### 3. [Optional] Upload HTML Table to Artifacts 
+[Test-Artifact](https://github.com/Teebra/JSON-to-HTML-table/actions/runs/6202069993)
 
 * This step uses the actions/upload-artifact@v3 action to upload the HTML table (output) generated in the previous step as an artifact.
 * name: Names the step.
