@@ -4,7 +4,10 @@
 
 Support Veracode's JSON format and convert it to a nice HTML table for easy readability.
 
-### Action
+# Usage
+See [action.yml](https://github.com/Teebra/JSON-to-HTML-table/blob/main/action.yml)
+### Upload an Individual File
+
 ```
 - name: Convert JSON to HTML Table
   uses: Teebra/JSON-to-HTML-table@main
@@ -13,6 +16,7 @@ Support Veracode's JSON format and convert it to a nice HTML table for easy read
 
 ```
 
+* One input will be needed for the JSON file path.
 
 
 Example pipeline
