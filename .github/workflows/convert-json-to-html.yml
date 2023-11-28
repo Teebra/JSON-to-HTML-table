@@ -1,4 +1,4 @@
-name: My Workflow
+name: JSON to HTML Table
 
 on:
   workflow_dispatch:
