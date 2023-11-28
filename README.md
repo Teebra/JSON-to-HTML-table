@@ -14,7 +14,7 @@ Support the JSON format used by Veracode and transform it into a nice HTML table
 
 ```
 - name: Convert JSON to HTML Table
-  uses: Teebra/JSON-to-HTML-table@main
+  uses: Teebra/JSON-to-HTML-table@v2.0.0
   with:
     json-file: path/to/your/jsonfile.json
 
@@ -53,7 +53,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Convert JSON to HTML Table
-        uses: Teebra/JSON-to-HTML-table@main
+        uses: Teebra/JSON-to-HTML-table@v2.0.0
         with:
           json-file: ./path/to/your/jsonfile.json  # Specify the path to your JSON file
 
